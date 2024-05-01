@@ -6,9 +6,7 @@ import org.junit.jupiter.api.Test;
  * Every method starting with the word "test" will be called when running
  * the test with JUnit.
  *
-<!--//# BEGIN TODO: Name, student ID, and date-->
-<p><b>Replace this line</b></p>
-<!--//# END TODO-->
+Martina Markova, 1942026, 01/05/2024
  */
 public class CandyTest {
 
@@ -38,8 +36,16 @@ public class CandyTest {
         check(3, 15, true);
     }
 
-//# BEGIN TODO: Additional test cases
-// Replace this line
-//# END TODO
+    @Test
+    public void testDivide1() {
+        check(10, 15, false);
+    }
+
+    @Test
+    public void testDivide2() {
+        check(1056, 93984, true);
+    }
+
+    
 
 }
