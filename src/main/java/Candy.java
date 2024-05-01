@@ -19,9 +19,7 @@
  * <p>
  * Apply Test-Driven Development to solve this problem.
  *
-<!--//# BEGIN TODO: Name, student ID, and date-->
-<p><b>Replace this line</b></p>
-<!--//# END TODO-->
+    Martina Markova, 1942026, 01/05/2024
  */
 public class Candy {
 
@@ -33,7 +31,7 @@ public class Candy {
      * @param k  number of kids
      * @param c  number of candies
      * @return a negative value when division is impossible,
-     *   and otherwise the number of candies each kid gets
+     * and otherwise the number of candies each kid gets
      * @pre {@code 0 <= k < 10^18 && 0 <= c < 10^18}
      * @post {@code
      *   \return < 0 && \not (\exists int q; 0 <= q < 10^18; c == q * k)
@@ -42,9 +40,12 @@ public class Candy {
      */
     static long divide(long k, long c) {
         long result; // value to be returned
-//# BEGIN TODO: Provide method implementation
-// Replace this line
-//# END TODO
+        if (c % k == 0) {
+            result = c / k;
+        } else {
+            result = -1;
+        }
+
         return result;
     }
 
