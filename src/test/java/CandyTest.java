@@ -56,5 +56,30 @@ public class CandyTest {
         check(0, 5, false);
     }
 
+    @Test
+    public void testDivide5() {
+        check(10, 10, true);
+    }
+
+    @Test
+    public void testDivide6() {
+        check(10, 20, true);
+    }
+
+    @Test
+    public void testDivide7() {
+        check(10, 30, true);
+    }
+    
+    @Test
+    public void testDivide8() {
+        check(50, 20, false);
+    }
+
+    @Test
+    public void testDivide9() {
+        check(5000, 2012, false);
+    }
+
 
 }
