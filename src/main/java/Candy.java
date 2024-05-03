@@ -40,6 +40,8 @@ public class Candy {
      */
     static long divide(long k, long c) {
         long result; // value to be returned
+        if(c == 0 && k == 0) return 0;
+        if(k == 0) return -1;
         if (c % k == 0) {
             result = c / k;
         } else {

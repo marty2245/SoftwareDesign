@@ -46,6 +46,15 @@ public class CandyTest {
         check(1056, 93984, true);
     }
 
-    
+    @Test
+    public void testDivide3() {
+        check(0, 0, true);
+    }
+
+    @Test
+    public void testDivide4() {
+        check(0, 5, false);
+    }
+
 
 }
