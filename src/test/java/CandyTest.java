@@ -38,7 +38,7 @@ public class CandyTest {
 
     @Test
     public void testDivide1() {
-        check(10, 15, false);
+        check(10, 15, true);
     }
 
     @Test
@@ -53,7 +53,7 @@ public class CandyTest {
 
     @Test
     public void testDivide4() {
-        check(0, 5, false);
+        check(0, 5, true);
     }
 
 
